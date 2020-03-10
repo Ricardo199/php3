@@ -1,3 +1,4 @@
 $(document).ready(function(){
-    alert("hola mundo");
+    var nombre = prompt("Ingrese su nombre: ");
+    console.log(nombre);
 });
