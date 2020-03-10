@@ -1,4 +1,6 @@
 <?php 
-    var_dump($_REQUEST);
-    die();
+   $datos = $_REQUEST['datos'];
+   $info = json_decode($datos);
+   var_dump($info);
+   die();
 ?>
