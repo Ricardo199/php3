@@ -9,7 +9,7 @@ $(document).ready(function(){
             data: {datos:datos}
         }).done(
             function(data) {
-               alert("Nombre: "+data.nombre);
+               $("#tot").text(data.sueldo);
         }).fail(
             function(data){
 
