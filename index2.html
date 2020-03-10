@@ -15,32 +15,32 @@
           <div class="form-column col-md-4">
               <div class="form-group">
                 <label for="">Nombres</label>
-                <input type="text" name="nombres" class="form-control"/>                
+                <input type="text" name="nombres" class="form-control" id="nombres"/>                
               </div>
           </div>
           <div class="form-column col-md-4">
             <div class="form-group">
               <label for="">Apellidos</label>
-              <input type="text" name="apellidos" class="form-control"/>
+              <input type="text" name="apellidos" class="form-control" id="apellidos"/>
             </div>
           </div>
           <div class="form-column col-md-4">
             <div class="form-group">
               <label for="">Fecha de nacimiento</label>
-              <input type="date" name="fechaNacimiento" class="form-control"/>
+              <input type="date" name="fechaNacimiento" class="form-control" id="fechaNacimiento"/>
             </div>
           </div>
           <div class="clearfix"></div>
           <div class="form-column col-md-6">
             <div class="form-group">
               <label for="">Sueldo</label>
-              <input type="text" name="sueldo" class="form-control"/>
+              <input type="text" name="sueldo" class="form-control" id="sueldo"/>
             </div>
           </div>
           <div class="form-colum col-md6">
             <div class="form-group">
               <label for="">Pais</label>
-              <select name="pais" class="form-control">
+              <select name="pais" id="pais" class="form-control">
                 <option value="El Salvador">El Salvador</option>
                 <option value="Honduras">Honduras</option>
                 <option value="Guatemala">Guatemala</option>
@@ -50,26 +50,26 @@
           <div class="clearfix"></div>
           <div class="form-column col-md-6">
             <div class="form-check">
-              <input id="jugar" class="form-check-input" type="checkbox" name="preferencias[]" value="Jugar">
+              <input id="jugar" class="form-check-input" type="checkbox" name="preferencias[]" id="preferencias" value="Jugar">
               <label for="jugar" class="form-check-label">Jugar</label>
             </div>
             <div class="form-check">
-              <input id="programar" class="form-check-input" type="checkbox" name="preferencias[]" value="Programar">
+              <input id="programar" class="form-check-input" type="checkbox" name="preferencias[]" id="preferencias" value="Programar">
               <label for="programar" class="form-check-label">Programar</label>
             </div>
             <div class="form-check">
-              <input id="depcode" class="form-check-input" type="checkbox" name="preferencias[]" value="Depurar el codigo">
+              <input id="depcode" class="form-check-input" type="checkbox" name="preferencias[]" id="preferencias" value="Depurar el codigo">
               <label for="depcode" class="form-check-label">Depurar codigo</label>
             </div>
             </div>
             <div class="form-column" class="col-md-6">
               <div class="form-group">
                 <label>Dirección</label>
-                <textarea name="direccion" cols="50" rows="5" class="form-control"></textarea>
+                <textarea name="direccion" cols="50" rows="5" class="form-control" id="direccion"></textarea>
               </div>
             </div>
             <div>
-              <button type="button" name="cmdEnviar" value="Envair Datos" class="btn btn-dark">
+              <button type="button" name="cmdEnviar" value="Procesar" class="btn btn-dark" id="cmdEnviar">Procesar</button>
             </div>
           </div>
         </div>
