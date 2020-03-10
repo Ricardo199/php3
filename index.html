@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html lang="es">
+  <head>
+    <title>Home</title>
+    <link rel="stylesheet" href="resources/src/css/bootstrap.min.css"/>
+  </head>
+  <body>
+    <div class="container">
+      <form method="POST" action="php/procesamiento.php">
+        <div class="row">
+          <div class="col-md-12">
+            <h3>Formulario de inscripción de Empleados</h3>
+          </div>
+          <div class="clearfix"></div>
+          <div class="form-column col-md-4">
+              <div class="form-group">
+                <label for="">Nombres</label>
+                <input type="text" name="nombres" class="form-control"/>                
+              </div>
+          </div>
+          <div class="form-column col-md-4">
+            <div class="form-group">
+              <label for="">Apellidos</label>
+              <input type="text" name="apellidos" class="form-control"/>
+            </div>
+          </div>
+          <div class="form-column col-md-4">
+            <div class="form-group">
+              <label for="">Fecha de nacimiento</label>
+              <input type="date" name="fechaNacimiento" class="form-control"/>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="form-column col-md-6">
+            <div class="form-group">
+              <label for="">Sueldo</label>
+              <input type="text" name="sueldo" class="form-control"/>
+            </div>
+          </div>
+          <div class="form-colum col-md6">
+            <div class="form-group">
+              <label for="">Pais</label>
+              <select name="pais" class="form-control">
+                <option value="El Salvador">El Salvador</option>
+                <option value="Honduras">Honduras</option>
+                <option value="Guatemala">Guatemala</option>
+              </select>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="form-column col-md-6">
+            <div class="form-check">
+              <input id="jugar" class="form-check-input" type="checkbox" name="preferencias[]" value="Jugar">
+              <label for="jugar" class="form-check-label">Jugar</label>
+            </div>
+            <div class="form-check">
+              <input id="programar" class="form-check-input" type="checkbox" name="preferencias[]" value="Programar">
+              <label for="programar" class="form-check-label">Programar</label>
+            </div>
+            <div class="form-check">
+              <input id="depcode" class="form-check-input" type="checkbox" name="preferencias[]" value="Depurar el codigo">
+              <label for="depcode" class="form-check-label">Depurar codigo</label>
+            </div>
+            </div>
+            <div class="form-column" class="col-md-6">
+              <div class="form-group">
+                <label>Dirección</label>
+                <textarea name="direccion" cols="50" rows="5" class="form-control"></textarea>
+              </div>
+            </div>
+            <div>
+              <input type="submit" name="cmdEnviar" value="Envair Datos" class="btn btn-success">
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="resources/src/js/jquery.min.js"></script>
+  <script src="resources/src/js/bootstrap.min.js"></script>
+</html>
