@@ -9,8 +9,9 @@ $(document).ready(function(){
             data: {datos:datos}
         }).done(
             function(data) {
-                
-        }).fail(function(data){
+               alert("Nombre: "+data.nombre);
+        }).fail(
+            function(data){
 
         });
     });
