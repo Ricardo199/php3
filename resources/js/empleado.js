@@ -5,6 +5,8 @@ $(document).ready(function(){
         var fechanac = $("#fechaNacimiento").val();
         var sueldo = $("#sueldo").val();
         var pais = $("#pais").val();
+
+        var direccion = $("#direccion").val();
         console.log(nombres+" "+apellidos+" "+fechanac+" $"+sueldo+" "+pais);
     });
 });
